@@ -1,0 +1,16 @@
+{
+  "name": "Pewee-installer",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/client"
+  },
+  "dependencies": {
+    "commander": "*",
+    "prompt-improved": "git://github.com/vincentsaluzzo/prompt-improved.git",
+    "download" : "*",
+    "download-status": "*",
+    "chalk": "*"
+  }
+
+}
