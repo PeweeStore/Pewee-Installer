@@ -2,8 +2,8 @@
   "name": "Pewee-installer",
   "version": "0.0.1",
   "private": true,
-  "scripts": {
-    "start": "node ./bin/client"
+  "bin": {
+    "pewee-installer": "./bin/pewee-installer"
   },
   "dependencies": {
     "commander": "*",
