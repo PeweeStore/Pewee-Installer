@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var platform = require('os').platform();
 var program = require('commander');
 var Prompt = require('prompt-improved');
