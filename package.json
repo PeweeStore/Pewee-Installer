@@ -14,7 +14,7 @@
   },
   "bugs": {
     "url": "https://github.com/PeweeStore/Pewee-Installer/issues"
-  }
+  },
   "bin": {
     "pewee-installer": "./bin/pewee-installer"
   },
@@ -35,5 +35,4 @@
     "store",
     "appstore"
   ]
-
 }
