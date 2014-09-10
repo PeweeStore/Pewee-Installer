@@ -113,6 +113,8 @@ var confirmInstall = function() {
                 chalk.white("for update last module and complete the update. Then, re run pewee") + "\n"
               );
               process.exit(0)
+            }
+          });
         });
 
       } else {
