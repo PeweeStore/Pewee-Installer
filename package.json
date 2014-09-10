@@ -1,7 +1,20 @@
 {
   "name": "Pewee-installer",
-  "version": "0.0.1",
-  "private": true,
+  "version": "1.0.0",
+  "author": "Vincent Saluzzo <vincentsaluzzo@gmail.com>",
+  "contributors": [
+    {
+      "name": "Vincent Saluzzo",
+      "email": "vincentsaluzzo@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PeweeStore/Pewee-Installert"
+  },
+  "bugs": {
+    "url": "https://github.com/PeweeStore/Pewee-Installer/issues"
+  }
   "bin": {
     "pewee-installer": "./bin/pewee-installer"
   },
@@ -11,6 +24,16 @@
     "download" : "*",
     "download-status": "*",
     "chalk": "*"
-  }
+  },
+  "license": "GPL-3.0",
+  "keywords": [
+    "pewee",
+    "OTA",
+    "inhouse",
+    "ios",
+    "android",
+    "store",
+    "appstore"
+  ]
 
 }
