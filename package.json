@@ -1,6 +1,6 @@
 {
   "name": "pewee-installer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Vincent Saluzzo <vincentsaluzzo@gmail.com>",
   "contributors": [
     {
@@ -23,7 +23,8 @@
     "prompt-improved": "git://github.com/vincentsaluzzo/prompt-improved.git",
     "download" : "*",
     "download-status": "*",
-    "chalk": "*"
+    "chalk": "*",
+    "rimraf": "*"
   },
   "license": "GPL-3.0",
   "keywords": [

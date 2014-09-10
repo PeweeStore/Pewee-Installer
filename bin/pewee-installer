@@ -43,7 +43,7 @@ if(installFolder === null || installFolder === undefined || installFolder.length
   });
 }
 
-if(dataFolder === null || dataFolder === undefined || dataFolder.length == 0 && !program.onlyUpdate) {
+if((dataFolder === null || dataFolder === undefined || dataFolder.length == 0) && onlyUpdate !== true) {
   questions.push({
     question: 'Data storage folder',
     key: 'dataFolder',
@@ -54,7 +54,7 @@ if(dataFolder === null || dataFolder === undefined || dataFolder.length == 0 && 
 
 
 var cleanAndCreateInstallFolder = function(callback) {
-  fs.rmdir(installFolder, function(error) {
+  require('rimraf')(installFolder, function(error) {
     fs.mkdir(installFolder, callback);
   });
 }
@@ -83,7 +83,7 @@ var downloadLastPeweeInstallToInstallFolder = function(callback) {
 var confirmInstall = function() {
 
   var question = '\n\nConfiguration defined: \n';
-  if(onlyUpdate) {
+  if(onlyUpdate === true) {
     question = question + 'Update pewee to '+installFolder+'\nAre you sure';
   } else {
     question = question + 'Install pewee to '+installFolder+'\nInstall pewee storage to '+dataFolder+'\nAre you sure';
@@ -96,7 +96,7 @@ var confirmInstall = function() {
     boolean:true
   }, function(err, res) {
     if(res) {
-      if(onlyUpdate) {
+      if(onlyUpdate === true) {
         console.log(chalk.white("Update ..."));
         cleanAndCreateInstallFolder(function(err) {
           if(err) { console.error("Error : %s", err); return; }
