@@ -108,7 +108,7 @@ var confirmInstall = function() {
                 "\n" +
                 chalk.white("Now run") + "\n" +
                 "\n" +
-                "\t" + chalk.grey("cd " + installFolder + " && npm update") + "\n" +
+                "\t" + chalk.grey("cd " + installFolder + " && npm install") + "\n" +
                 "\n" +
                 chalk.white("for update last module and complete the update. Then, re run pewee") + "\n"
               );
@@ -136,7 +136,7 @@ var confirmInstall = function() {
                   "\n" +
                   chalk.white("Now run") + "\n" +
                   "\n" +
-                  "\t" + chalk.grey("cd " + installFolder + " && npm update") + "\n" +
+                  "\t" + chalk.grey("cd " + installFolder + " && npm install") + "\n" +
                   "\n" +
                   chalk.white("for finish the installation.") + "\n" +
                   "\n" +
