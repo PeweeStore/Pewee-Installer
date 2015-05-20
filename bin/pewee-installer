@@ -68,8 +68,9 @@ var createDataFolder = function(callback) {
 }
 
 var downloadLastPeweeInstallToInstallFolder = function(callback) {
-  var download = new Download()
-  download.get('https://github.com/PeweeStore/Pewee/archive/master.zip', installFolder, { extract: true, strip: 1})
+  var download = new Download({ extract: true, strip: 1});
+  download.get('https://github.com/PeweeStore/Pewee/archive/master.zip');
+  download.dest(installFolder);
   download.run(function(err, files) {
     if(err) {
       callback(err);
